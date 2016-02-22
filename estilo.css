@@ -1,0 +1,37 @@
+#acceso .ui-content {
+    background: linear-gradient(to bottom, #f8ffe8 0%,#e3f5ab 52%,#b7df2d 100%,#b7df2d 100%);
+    max-width: 380px;
+    margin: 0 auto;
+    margin-top: 25px;
+    border: 4px inset limegreen;
+    border-radius: 15px;
+}
+#acceso .ui-field-contain > label ~ [class*="ui-"], 
+.ui-field-contain .ui-controlgroup-controls{
+	width: 250px;
+}
+#acceso .ui-field-contain{
+
+}
+
+#acceso .ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all{
+	width: 140px;
+	margin: 0 auto;
+	background-color: white;
+	border: 2px solid darkgreen;
+	color: darkgreen;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	box-shadow: 4px 6px 8px 1px rgba(180,235,129,1);
+}
+#acceso .ui-link.ui-btn.ui-icon-user.ui-btn-icon-left.ui-shadow.ui-corner-all:hover{
+	background-color: #A7CB5F;
+	transition: background 0.3s ease-in-out;
+}
+#acceso .ui-field-contain > label, .ui-field-contain .ui-controlgroup-label, .ui-field-contain > .ui-rangeslider > label{
+	color: darkgreen;
+	font-weight: bold;
+	width: 27%;
+	font-family: sans-serif;
+}
