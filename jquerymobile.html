@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="estilo.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<title>JQUERY MOBILE</title>
+	</head>
+	<body>
+		<div data-role="page" id="acceso">
+			<div data-role="header">
+			</div>
+
+			<div data-role="content">
+			<div data-role="fieldcontain">
+			<label for="usuario">Login:</label>
+			<input type="text" name="user" placeholder="Introduce el login"/>
+			</div>
+			<div data-role="fieldcontain">
+			<label for="password">Password:</label>
+			<input type="text" name="password" placeholder="Introduce la contraseña"/>
+			</div>
+				<a data-role="button" href="#seleccion" data-icon="user">Iniciar sesión</a>
+			</div>
+
+			<div data-role="footer">
+			</div>
+		</div>
+		<div data-role="page" id="seleccion">
+			<div data-role="header">
+			<a data-role="button" href="#seleccion" data-icon="home">Home</a>
+			<a data-role="button" href="#acceso" data-icon="power">Log out</a>
+			</div>
+
+			<div data-role="content">
+			<div data-role="fieldcontain">
+			<label for="curso">Escoge un curso:</label>
+			<select class="cursos">
+				<option value="DAM">DAM</option>
+				<option value="DAW">DAW</option>
+				<option value="ASIR">ASIR</option>
+			</select>
+			</div>
+			<div data-role="fieldcontain">
+			<label for="alumno">Escoge un alumno:</label>
+			<input type="search" name="buscarAlumno" placeholder="Escribe el nombre a buscar">
+			
+			</div>
+				<a data-role="button" href="#contenido" data-icon="check">Calificar alumno</a>
+			</div>
+
+			<div data-role="footer">
+			</div>
+		</div>
+		<div data-role="page" id="contenido">
+			<div data-role="header">
+			<a data-role="button" href="#seleccion" data-icon="home">Home</a>
+			<a data-role="button" href="#acceso" data-icon="power">Log out</a>
+			</div>
+			<div data-role="content">
+			<h3>CONTENIDO DEL PROYECTO</h3>
+			<label>Selecciona la nota correspondiente en cada uno de los apartados</label>
+			<h4>Planteamiento:</h4>
+			<div data-role="fieldcontain">
+				<label for="Objetivos">Objetivos:</label>
+				<select class="objetivos">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Recurso">Recursos utilizados:</label>
+				<select class="recursos">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Destinatarios">Destinatarios:</label>
+				<select class="destinatarios">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Justificacion">Justificación del proyecto:</label>
+				<select class="justificaciones">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<h4>Contenido:</h4>
+			<div data-role="fieldcontain">
+				<label for="Metodología">Metodología seguida:</label>
+				<select class="metodologias">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Claridad">Claridad:</label>
+				<select class="claridad">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Actividades">Actividades o acciones realizadas:</label>
+				<select class="actividades">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Documentacion">Documentación elaborada:</label>
+				<select class="documentacion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<h4>Resultados obtenidos:</h4>
+			<div data-role="fieldcontain">
+				<label for="Conclusiones">Conclusiones:</label>
+				<select class="conclusion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Objetivos">Objetivos conseguidos:</label>
+				<select class="objetivo">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Consecucion">Grado de consecución:</label>
+				<select class="consecucion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+				<a data-role="button" href="#presentacion" data-icon="action">Guardar cambios y seguir calificando</a>
+			</div>
+			<div data-role="footer">
+			</div>
+			</div>
+			<div data-role="page" id="presentacion">
+			<div data-role="header">
+			<a data-role="button" href="#seleccion" data-icon="home">Home</a>
+			<a data-role="button" href="#acceso" data-icon="power">Log out</a>
+			</div>
+			<div data-role="content">
+			<h3>CALIDAD DE PRESENTACIÓN</h3>
+			<label>Selecciona la nota correspondiente en cada uno de los apartados</label>
+			<div data-role="fieldcontain">
+			<label for="presentacion">Presentación escrita:</label>
+				<select class="escrito">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Redaccion">Redacción y claridad del texto:</label>
+				<select class="redaccion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Organizacion">Organización del contenido:</label>
+				<select class="organizacion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<a data-role="button" href="#oral" data-icon="action">Guardar cambios y seguir calificando</a>
+			</div>
+			<div data-role="footer">
+			</div>
+		</div>
+		<div data-role="page" id="oral">
+			<div data-role="header">
+			<a data-role="button" href="#seleccion" data-icon="home">Home</a>
+			<a data-role="button" href="#acceso" data-icon="power">Log out</a>
+			</div>
+			<div data-role="content">
+			<h3>EXPRESIÓN ORAL</h3>
+			<label>Selecciona la nota correspondiente en cada uno de los apartados</label>
+			<div data-role="fieldcontain">
+			<label for="entrada">Entrada del alumno:</label>
+				<select class="entrada">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Indumentaria">Indumentaria:</label>
+				<select class="indumentaria">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Introduccion">Introducción ¿Es atractiva? ¿Queda claro el proyecto?:</label>
+				<select class="introduccion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Desarrollo">Desarrollo: Órden en las ideas. Claridad en la exposición. Aclaración de términos técnicos:</label>
+				<select class="desarrollo">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Conclusion">¿Queda claro el objetivo del proyecto? ¿Lo vende bien?:</label>
+				<select class="conclusion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Seguridad">Seguridad en lo que expone. La presentación está trabajada (power-point, etc):</label>
+				<select class="seguridad">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Entusiasmo">Entusiasmo en lo que expone:</label>
+				<select class="entusiasmo">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<h5>Expresión oral a la hora de explicar el proyecto:</h5>
+			<div data-role="fieldcontain">
+				<label for="Entonacion">Entonación:</label>
+				<select class="entonacion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Volumen">Volumen:</label>
+				<select class="volumen">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Velocidad">Velocidad:</label>
+				<select class="velocidad">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Vacilacion">Vacilación en la voz:</label>
+				<select class="vacilación">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Pausas">Pausas:</label>
+				<select class="pausas">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Muletillas">Utilización de muletillas:</label>
+				<select class="muletillas">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Duracion">Duración, ¿Se adecúa a lo estipulado?</label>
+				<select class="duracion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<h5>Lenguaje no verbal:</h5>
+			<div data-role="fieldcontain">
+				<label for="Mirada">Mirada, ¿dirige la mirada a todo el auditorio?:</label>
+				<select class="mirada">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Sonrisa">Sonrisa/Expresión facial positiva:</label>
+				<select class="sonrisa">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Cuerpo">Posición correcta del cuerpo:</label>
+				<select class="cuerpo">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Tics">Tics, gestos nerviosos</label>
+				<select class="tics">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Atencion">Atención del público, ¿Logra atraer la atención del público?</label>
+				<select class="atencion">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="Preguntas">Preguntas realizadas, ¿Responde de forma coherente?</label>
+				<select class="preguntas">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<a data-role="button" href="#notas" data-icon="action">Ver nota media del alumno</a>
+			</div>
+			<div data-role="footer">
+			</div>
+		</div>
+		<div data-role="page" id="notas">
+			<div data-role="header">
+			<a data-role="button" href="#seleccion" data-icon="home">Home</a>
+			<a data-role="button" href="#acceso" data-icon="power">Log out</a>
+			</div>
+			<div data-role="content">
+			<h3>La nota media de "nombre alumno" es de "nota"</h3>
+			<div data-role="footer">
+			</div>
+		</div>
+	</body>
+</html>
