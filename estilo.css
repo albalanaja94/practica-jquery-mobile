@@ -72,7 +72,8 @@
 
 .ui-field-contain > label ~ [class*="ui-"], 
 .ui-field-contain .ui-controlgroup-controls{
-	width: 50%;
+	width: 44%;
+	padding-right: 0px;
 	
 }
 
@@ -94,7 +95,7 @@
 	font-weight: bold;
 }
 
-#seleccion .ui-content{
+.ui-content{
 	background-color: #e3f5ab;
 }
 
@@ -121,3 +122,79 @@
 	background: linear-gradient(to bottom, #f8ffe8 0%,#e3f5ab 52%,#b7df2d 100%,#b7df2d 100%);
 }
 
+/*CONTENIDO DEL PROYECTO*/
+@keyframes aparecer {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+ }
+h3{
+	color: darkgreen;
+  animation-duration: 3s;
+  animation-name: aparecer;
+  text-shadow: 1px 2px 1px #BFFFB3;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.ui-content > label{
+	font-style: italic;
+	font-size: 13px;
+}
+
+h4{
+	text-transform: uppercase;
+	text-decoration: underline;
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.grupo{
+	margin-left: 40px;
+}
+
+.ui-link.ui-btn.ui-icon-action.ui-btn-icon-left.ui-shadow.ui-corner-all{
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 35px;
+	background-color: white;
+	border: 2px solid darkgreen;
+	color: darkgreen;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-top: 70px;
+}
+
+.ui-link.ui-btn.ui-icon-action.ui-btn-icon-left.ui-shadow.ui-corner-all:hover{
+	background-color: #A7CB5F;
+	box-shadow: none;
+	transition: background 0.3s ease-in-out;
+}
+
+#oral .grupo{
+	margin-bottom: 60px;
+}
+
+#oral .ui-field-contain > label{
+	width: 45%;
+}
+
+#notas h3{
+	font-size: 32px;
+	text-align: center;
+}
+
+.ui-page-theme-a a{
+	color: darkgreen !important;
+	text-transform: uppercase;
+}
+.ui-page-theme-a a:hover{
+	color: black !important;
+	transition: color 0.3s ease-in-out;
+}

@@ -71,6 +71,7 @@
 			<h3>CONTENIDO DEL PROYECTO (Máximo 6.5 ptos. Representa el 65%)</h3>
 			<label>Selecciona la nota correspondiente en cada uno de los apartados</label>
 			<h4>Planteamiento:</h4>
+			<div class="grupo">
 			<div data-role="fieldcontain">
 				<label for="Objetivos">Objetivos:</label>
 				<select class="objetivos">
@@ -131,7 +132,9 @@
 					<option value="10">10</option>
 				</select>
 			</div>
+			</div>
 			<h4>Contenido:</h4>
+			<div class="grupo">
 			<div data-role="fieldcontain">
 				<label for="Metodología">Metodología seguida:</label>
 				<select class="metodologias">
@@ -192,7 +195,9 @@
 					<option value="10">10</option>
 				</select>
 			</div>
+			</div>
 			<h4>Resultados obtenidos:</h4>
+			<div class="grupo">
 			<div data-role="fieldcontain">
 				<label for="Conclusiones">Conclusiones:</label>
 				<select class="conclusion">
@@ -238,7 +243,8 @@
 					<option value="10">10</option>
 				</select>
 			</div>
-				<a data-role="button" href="#presentacion" data-icon="action">Guardar cambios y seguir calificando</a>
+			</div>
+				<a data-role="button" href="#presentacion" data-icon="action">Siguiente</a>
 			</div>
 			<div data-role="footer">
 			<div class="pie">
@@ -300,7 +306,7 @@
 					<option value="10">10</option>
 				</select>
 			</div>
-			<a data-role="button" href="#oral" data-icon="action">Guardar cambios y seguir calificando</a>
+			<a data-role="button" href="#oral" data-icon="action">Siguiente</a>
 			</div>
 			<div data-role="footer">
 			<div class="pie">
@@ -422,7 +428,8 @@
 					<option value="10">10</option>
 				</select>
 			</div>
-			<h5>Expresión oral a la hora de explicar el proyecto:</h5>
+			<h4>Expresión oral a la hora de explicar el proyecto:</h4>
+			<div class="grupo">
 			<div data-role="fieldcontain">
 				<label for="Entonacion">Entonación:</label>
 				<select class="entonacion">
@@ -513,6 +520,7 @@
 					<option value="10">10</option>
 				</select>
 			</div>
+			</div>
 			<div data-role="fieldcontain">
 				<label for="Duracion">Duración, ¿Se adecúa a lo estipulado?</label>
 				<select class="duracion">
@@ -528,7 +536,8 @@
 					<option value="10">10</option>
 				</select>
 			</div>
-			<h5>Lenguaje no verbal:</h5>
+			<h4>Lenguaje no verbal:</h4>
+			<div class="grupo">
 			<div data-role="fieldcontain">
 				<label for="Mirada">Mirada, ¿dirige la mirada a todo el auditorio?:</label>
 				<select class="mirada">
@@ -589,6 +598,7 @@
 					<option value="10">10</option>
 				</select>
 			</div>
+			</div>
 			<div data-role="fieldcontain">
 				<label for="Atencion">Atención del público, ¿Logra atraer la atención del público?</label>
 				<select class="atencion">
@@ -619,7 +629,7 @@
 					<option value="10">10</option>
 				</select>
 			</div>
-			<a data-role="button" href="#notas" data-icon="action">Ver nota media del alumno</a>
+			<a data-role="button" href="#notas" data-icon="action">Ver la nota media</a>
 			</div>
 			<div data-role="footer">
 			<div class="pie">
@@ -635,9 +645,8 @@
 			</div>
 			<div data-role="content">
 			<h3>La nota media de "nombre alumno" es de "nota"</h3>
+			<a href="#seleccion">Calificar a otro alumno</a>
 			<div data-role="footer">
-			<div class="pie">
-			</div>
 			</div>
 		</div>
 	</body>
