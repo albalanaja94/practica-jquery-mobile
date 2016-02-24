@@ -6,6 +6,7 @@
     margin-top: 25px;
     border: 4px inset limegreen;
     border-radius: 15px;
+    box-shadow: 2px 2px 1px 3px #e3f5ab;
 }
 #acceso .ui-field-contain > label ~ [class*="ui-"], 
 .ui-field-contain .ui-controlgroup-controls{
